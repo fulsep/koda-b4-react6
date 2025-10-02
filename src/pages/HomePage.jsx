@@ -15,7 +15,7 @@ function Headline() {
   },[])
   const {
     title="", image=null, synopsis="",
-    author="", date="", slug="", username=""
+    author="", date="", slug="", username="", body=""
   } = data
   return (
     <div className='flex flex-col md:flex-row my-20 w-full gap-5'>
@@ -29,7 +29,7 @@ function Headline() {
           <Link to={`/@${username}/${slug}`}>
             <h2 className='font-bold text-3xl'>{title}</h2>
           </Link>
-          <p>{synopsis}…</p>
+          <Markdown>{synopsis ? synopsis.concat("…") : String(body).slice(0,80).trim().concat("…")}</Markdown>
           <span className='text-sm text-gray-500'>{author} &middot; {date} &middot; 4 min read</span>
         </div>
       </div>
@@ -49,7 +49,7 @@ function GridItem({title, synopsis, body, author, date, image, username, slug}) 
         <Link to={`/@${username}/${slug}`}>
           <h2 className='font-bold text-3xl'>{title}</h2>
         </Link>
-        <p><Markdown>{synopsis || String(body).slice(0,100).trim()}</Markdown>…</p>
+        <Markdown>{synopsis ? synopsis.concat("…") : String(body).slice(0,80).trim().concat("…")}</Markdown>
         <span className='text-sm text-gray-500'>{author} &middot; {date} &middot; 4 min read</span>
       </div>
     </div>
