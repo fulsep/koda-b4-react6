@@ -18,8 +18,8 @@ function Headline() {
     author="", date="", slug="", username=""
   } = data
   return (
-    <div className='flex my-20 w-full gap-5'>
-      <div className='flex justify-end items-center flex-1'>
+    <div className='flex flex-col md:flex-row my-20 w-full gap-5'>
+      <div className='flex justify-center md:justify-end items-center flex-1'>
         <img className='max-w-xl w-full aspect-video' src={image} alt="article" />
       </div>
       <div className='flex justify-center items-start flex-col flex-1'>
@@ -68,9 +68,9 @@ function HomePage() {
   return (
     <>
       <Navbar />
-      <main className='flex flex-col my-10'>
+      <main className='flex flex-col my-10 mx-5'>
         <Headline />
-        <div className='grid grid-cols-3 max-w-7xl w-full gap-5 mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-3 max-w-7xl w-full gap-5 mx-auto'>
           {data.map(article=><GridItem key={article.slug} {...article} />)}
         </div>
       </main>
