@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.article-body{
+    @apply text-lg whitespace-pre-line;
+}
+
+.article-body h1 {
+    @apply text-4xl font-bold;
+}
+
+.article-body h2 {
+    @apply text-3xl font-bold;
+}
+
+.article-body h3 {
+    @apply text-2xl font-bold;
+}
+
+.article-body ul{
+    @apply list-disc pl-5;
+}
+
+.article-body ol{
+    @apply list-decimal pl-5;
+}
+
+.article-body img[alt=full] {
+    @apply w-full;
+}
