@@ -34,9 +34,10 @@ function ArticlePage() {
       <Navbar />
       <main className='max-w-5xl w-full md:mx-auto mx-5'>
         <article className='my-20 flex flex-col gap-10'>
-          <h2 className='font-bold text-5xl'>{title}</h2>
-          <div className='flex items-center gap-5'>
-            <div className='flex gap-5 items-center'>
+          <h2 className='font-bold md:text-5xl text-3xl'>{title}</h2>
+          <div className='flex flex-col md:flex-row md:items-center gap-5'>
+            <div className='flex gap-5'>
+              <div className='flex gap-5 items-center'>
               <div>
                 <div className='w-12 aspect-square rounded-full bg-black' />
               </div>
@@ -44,6 +45,7 @@ function ArticlePage() {
             </div>
             <div>
               <button type='button' className='bg-white border border-black px-5 py-2 rounded-full'>Follow</button>
+            </div>
             </div>
             <div className='flex md:flex-row flex-col md:gap-5'>
               <div className='text-gray-600'>{readingTime(body, 250).text}</div>
