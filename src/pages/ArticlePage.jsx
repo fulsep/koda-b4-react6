@@ -32,8 +32,8 @@ function ArticlePage() {
         <title>{title} | Medium</title>
       </Helmet>
       <Navbar />
-      <main className='max-w-5xl w-full flex justify-center'>
-        <article className='my-20 px-5 flex flex-col gap-10'>
+      <main className='flex justify-center'>
+        <article className='max-w-5xl w-full my-20 px-5 flex flex-col gap-10'>
           <h2 className='font-bold md:text-5xl text-3xl'>{title}</h2>
           <div className='flex flex-col md:flex-row md:items-center gap-5'>
             <div className='flex gap-5'>
