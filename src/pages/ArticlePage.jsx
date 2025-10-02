@@ -34,13 +34,19 @@ function ArticlePage() {
         <article className='my-20 flex flex-col gap-10'>
           <h2 className='font-bold text-5xl'>{title}</h2>
           <div className='flex items-center gap-5'>
-            <div className='w-12 aspect-square rounded-full bg-black' />
-            <div>{author}</div>
+            <div className='flex gap-5 items-center'>
+              <div>
+                <div className='w-12 aspect-square rounded-full bg-black' />
+              </div>
+              <div>{author}</div>
+            </div>
             <div>
               <button type='button' className='bg-white border border-black px-5 py-2 rounded-full'>Follow</button>
             </div>
-            <div className='text-gray-600'>4 min read</div>
-            <div className='text-gray-600'>{date}</div>
+            <div className='flex md:flex-row flex-col md:gap-5'>
+              <div className='text-gray-600'>4 min read</div>
+              <div className='text-gray-600'>{date}</div>
+            </div>
           </div>
           <div>
             <img className='w-full' src={image} alt="banner" />
