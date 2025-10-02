@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import moment from 'moment';
 import { readingTime } from 'reading-time-estimator';
+import { Helmet } from 'react-helmet';
 
 function Headline() {
   const [data, setData] = React.useState({})
@@ -73,6 +74,9 @@ function HomePage() {
 
   return (
     <>
+      <Helmet>
+        <title>Medium</title>
+      </Helmet>
       <Navbar />
       <main className='flex flex-col my-10 mx-5'>
         <Headline />
