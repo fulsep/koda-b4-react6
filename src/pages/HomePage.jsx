@@ -20,10 +20,12 @@ function Headline() {
   return (
     <div className='flex flex-col md:flex-row my-20 w-full gap-5'>
       <div className='flex justify-center md:justify-end items-center flex-1'>
-        <img className='max-w-xl w-full aspect-video' src={image} alt="article" />
+        <Link to={`/@${username}/${slug}`}>
+          <img className='md:max-w-xl w-full aspect-video' src={image} alt="article" />
+        </Link>
       </div>
       <div className='flex justify-center items-start flex-col flex-1'>
-        <div className='max-w-xl w-full aspect-video flex flex-col gap-3'>
+        <div className='md:max-w-xl w-full aspect-video flex flex-col gap-3'>
           <Link to={`/@${username}/${slug}`}>
             <h2 className='font-bold text-3xl'>{title}</h2>
           </Link>
@@ -37,11 +39,13 @@ function Headline() {
 
 function GridItem({title, synopsis, body, author, date, image, username, slug}) {
   return (
-    <div className='max-w-xl w-full aspect-video flex flex-col gap-3'>
+    <div className='md:max-w-xl w-full aspect-video flex flex-col gap-3'>
       <div>
-        <img src={image} alt="article" />
+        <Link to={`/@${username}/${slug}`}>
+          <img className='w-full' src={image} alt="article" />
+        </Link>
       </div>
-      <div className='max-w-xl w-full aspect-video flex flex-col gap-3'>
+      <div className='md:max-w-xl w-full aspect-video flex flex-col gap-3'>
         <Link to={`/@${username}/${slug}`}>
           <h2 className='font-bold text-3xl'>{title}</h2>
         </Link>
