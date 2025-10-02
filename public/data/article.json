@@ -6,7 +6,7 @@
         "synopsis":"Mengembangkan aplikasi CodeIgniter4 lebih mudah dengan menggunakan Docker, berikut caranya",
         "author": "Fahrul Septiana",
         "username": "fahrulseptiana",
-        "date": "02-10-2025T10:08:41+7",
+        "date": "2025-10-02T10:08:41+07:00",
         "body": "Pada dasarnya pengembangan aplikasi sudah sangat dipermudah dengan adanya docker, karena setiap tools yang diperlukan sudah di-bundling dalam satu image yang siap digunakan.\nCodeIgniter 4 (selanjutnya kita sebut CI4) memiliki requirements untuk dapat dijalankan, diantaranya ada:\n\n- PHP 8.1 atau lebih baru\n- Ekstensi PHP Wajib: intl, mbstring dan json (ekstensi json preinstalled di php 8)\n- Ekstensi PHP Tambahan: mysqli, curl, gd dan simplexml\n\n## Membuat Docker Image Siap Pakai\nKarena kita sudah mengetahui requirements di atas, langkah selanjutnya, kita bisa membuat custom image dengan basis image PHP 8.1 dari registry hub.docker.com dan memilih image dengan tag 8.1-apacheagar lebih mudah untuk digunakan dan familiar karena dekat dengan konfigurasi apache di XAMPP.\n```bash\ndocker pull php:8.1-apache\n```\nAda beberapa ekstensi yang perlu diinstal secara manual, di dalam image yang kita pull sebelumnya sudah ada perintah docker-php-ext-install yang bisa kita manfaatkan.\n\nSecara bawaan, php:8.1-apache menggunakan sistem operasi linux dengan distro debian. Maka dari itu, untuk melakukan instalasi program kita bisa menggunakan perintah apt-get\n\nUntuk memasang mbstring, kita perlu instal library oniguruma terlebih dahulu, kita bisa pakai libonig-dev dari repository debian secara langsung\n```bash\napt-get install libonig-dev\n```\nKita juga memerlukan libicu-dev untuk ekstensi intl\n```bash\napt install libicu-dev\n```"
     },
     {
@@ -16,7 +16,7 @@
         "synopsis": null,
         "author": "Fahrul Septiana",
         "username":"fahrulseptiana",
-        "date":"02-10-2025T10:08:41+7",
+        "date":"2025-10-02T10:08:41+07:00",
         "body": "**Jakarta** - Banyak HP Android murah di rentang harga Rp 2-3 juta yang saat ini sudah dilengkapi layar AMOLED. Konsumen tetap bisa menikmati display yang superior meskipun memiliki budget yang terbatas.\nLayar AMOLED menjadi salah satu fitur yang banyak dicari konsumen karena menawarkan warna tajam, kontras tinggi, dan konsumsi daya yang efisien. Biaya produksi panel ini sudah semakin murah, sehingga banyak vendor ponsel yang beralih dari panel LCD ke AMOLED.\n\nBagi kalian yang memiliki budget sekitar Rp 3 juta atau di bawahnya, berikut ini lima rekomendasi HP murah dengan layar AMOLED yang bisa jadi pilihan di tahun 2025.\n\n## Samsung Galaxy A17\nSamsung Galaxy A17 versi 4G dilengkapi layar Super AMOLED berukuran 6,7 inch dengan resolusi 2340 x 1080 (FHD+). Layar ini memiliki refresh rate 90Hz dan dilindungi Gorilla Glass Victus.\n\nSamsung membekali ponsel ini dengan chipset MediaTek Helio G99 yang dipadukan dengan RAM 8GB dan memori internal hingga 256GB. Ponsel ini menjagokan kamera utama 50 MP dengan OIS dan One UI 7 yang dilengkapi fitur pintar seperti Circle to Search dan Knox Vault. Galaxy A17 dibanderol dengan harga mulai dari Rp 2.999.000.\n\n## Vivo Y400\nHP murah lainnya dengan layar AMOLED adalah Vivo Y400. Ponsel ini mengusung layar AMOLED berukuran 6,67 inch dengan resolusi FHD+, refresh rate hingga 120Hz, dan tingkat kecerahan hingga 1.800 nits.\n\nChipset Snapdragon 685 mengotaki kinerja Vivo Y400, dengan RAM 8GB dan memori internal hingga 256GB. Kapasitas baterainya 6.000 mAh dengan pengisian cepat 44W, dan kemampuan fotografinya mengandalkan kamera utama 50 MP dengan OIS. Ponsel ini tersedia dengan harga mulai dari Rp 3.199.000.\n\n## Infinix Hot 60 Pro+\nInfinix Hot 60 Pro+ memegang rekor sebagai ponsel dengan layar lengkung tertipis di dunia dengan ketebalan hanya 5,95mm. Layar lengkung ini menggunakan panel AMOLED berukuran 6,78 inch dengan resolusi 1,5K, refresh rate 144Hz, dan tingkat kecerahan hingga 4.500 nits.\n\nKinerjanya didukung chipset MediaTek Helio G200 dengan RAM 8GB dan memori internal hingga 256GB. Ponsel ini dilengkapi kamera utama 50 MP, baterai 5.160 mAh dengan pengisian cepat 45W, dan menjalankan sistem operasi XOS 15.1.1 yang membawa sederet fitur AI. Infinix Hot 60 Pro+ dibanderol dengan harga mulai dari Rp 2.599.000.\n\n## Redmi Note 14\nRedmi Note 14 menggunakan layar AMOLED berukuran 6,67 inch dengan resolusi FHD+, refresh rate 120Hz, dan dilindungi Gorilla Glass 5. Ponsel ini ditenagai chipset MediaTek Helio G99-Ultra dan menjalankan sistem operasi HyperOS.\n\nXiaomi membekali ponsel ini dengan kamera utama 108 MP dan baterai 5.500 mAh dengan pengisian cepat 33W. Saat ini harga Redmi Note 14 sudah semakin terjangkau, mulai dari Rp 2,2 jutaan.\n\n## Tecno Spark 40 Pro\nTecno Spark 40 Pro yang diluncurkan bulan lalu mengusung layar AMOLED berukuran 6,78 inch dengan resolusi 2712 x 1220 pixel. Layar ini mendukung refresh rate 144Hz dan dilindungi Gorilla Glass 7i.\n\nSpesifikasi lainnya termasuk chipset MediaTek Helio G100 Ultimate, RAM 8GB, memori internal 128GB, dan baterai 5.200 mAh dengan pengisian cepat 45W. Ponsel dengan kamera utama 50 MP ini dibanderol dengan harga Rp 1.979.000."
     },
     {
@@ -26,13 +26,13 @@
         "synopsis": null,
         "author":"Fahrul Septiana",
         "username":"fahrulseptiana",
-        "date":"02-10-2025T10:08:41+7",
+        "date":"2025-10-02T10:08:41+07:00",
         "body":"**Jakarta** - Sudah tak sabar mau membeli seri iPhone 17 di Indonesia? Tenang, kabarnya deretan iPhone baru itu akan dirilis lebih cepat dibanding perkiraan sebelumnya.\nBagus Hernawan, Apple enthusiast, lewat akun X-nya menyebutkan kalau seri iPhone 17 tersebut akan dijual di Indonesia mulai 17 Oktober 2025 mendatang. Sementara pemesanannya dibuka mulai 10 Oktober.\n\n\"Harga mulai 17 jutaan, paling mahal 42 jutaan,\" tulis Bagus, yang biasanya punya prediksi akurat terkait produk-produk Apple di Indonesia.\n\nDisebut lebih cepat dari perkiraan karena sebelumnya Bagus menyebut deretan iPhone 17 itu akan dirilis pada 24 Oktober 2025.\n\nDiketahui, seri iPhone 17 sudah mengantongi sertifikasi Tingkat Komponen Dalam Negeri (TKDN), yaitu iPhone 17, iPhone Air, iPhone 17 Pro, iPhone 17 Pro Max.\n\nBerdasarkan data dari situs resmi Pusat Peningkatan Penggunaan Produk Dalam Negeri (P3DN) Kementerian Perindustrian, sertifikasi TKDN untuk model-model tersebut telah terdaftar dengan kode A3517 (iPhone Air), A3520 (iPhone 17), A3523 (iPhone 17 Pro), dan A3526 (iPhone 17 Max). Keempatnya mendapat nilai TKDN 40%.\n\nKemudian deretan iPhone baru itu lolos uji Sertifikasi Perangkat Pos dan Telekomunikasi (Postel) dari Kementerian Komunikasi dan Informatika (Komdigi).\n\nPantauan detikINET di situs Sertifikasi Postel, ada empat perangkat yang didaftarkan PT Apple Indonesia. Perangkat tersebut meliputi kode A3517 (iPhone Air), A3520 (iPhone 17), A3523 (iPhone 17 Pro), dan A3526 (iPhone 17 Max).\n\nKondisi ini berbeda saat Apple baru merilis iPhone 16 series setahun lalu. Saat itu, deretan iPhone 16 itu baru mendapat sertifikasi komplit pada April 2025 sejak dirilis September 2024.\n\niPhone 17 series dan Air mendapat kemudahan berkat kesepakatan investasi Apple senilai USD 160 juta (sekitar Rp 2,6 triliun) dengan pemerintah. Investasi ini mencakup pembangunan pusat riset dan inovasi di Indonesia, yang membantu memenuhi regulasi TKDN tanpa perlu pabrik perakitan penuh."
     },
     {
         "title":"Apple Siap Rilis 5 Produk Baru Oktober Ini, Ini Bocorannya!",
         "slug":"apple-siap-rilis-5-produk-baru-oktober-ini-ini-bocorannya",
-        "date":"02-10-2025T10:08:41+7",
+        "date":"2025-10-02T10:08:41+07:00",
         "author":"Fahrul Septiana",
         "username":"fahrulseptiana",
         "image":"https://awsimages.detik.net.id/community/media/visual/2024/07/20/ipad-pro-m4-2024-12_169.jpeg?w=700&q=90",
@@ -42,7 +42,7 @@
     {
         "title":"Handling form: The efficient way!",
         "slug":"handling-form-the-efficient-way",
-        "date":"02-10-2025T10:08:41+7",
+        "date":"2025-10-02T10:08:41+07:00",
         "author":"Fahrul Septiana",
         "username":"fahrulseptiana",
         "image":"https://miro.medium.com/v2/resize:fit:720/format:webp/1*W1WS-7weTeRLQvzNUeSr-Q.png",
@@ -52,7 +52,7 @@
     {
         "title":"Steam Autumn Sale Digelar, Ini Rekomendasi Game PC Diskon Hingga 90%",
         "slug":"steam-autumn-sale-digelar-ini-rekomendasi-game-pc-diskon-hingga-90",
-        "date":"02-10-2025T10:08:41+7",
+        "date":"2025-10-02T10:08:41+07:00",
         "author":"Fahrul Septiana",
         "username":"fahrulseptiana",
         "image":"https://awsimages.detik.net.id/community/media/visual/2023/02/08/hogwarts-legacy-segera-rilis-ini-harga-dan-spek-pc-yang-dibutuhkan_169.jpeg?w=700&q=90",

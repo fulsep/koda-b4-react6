@@ -4,6 +4,8 @@ import Markdown from 'react-markdown'
 import { useNavigate, useParams } from 'react-router-dom'
 import { articleFetch } from '../utils/data'
 import { Helmet } from 'react-helmet'
+import moment from 'moment'
+import { readingTime } from 'reading-time-estimator'
 
 function ArticlePage() {
   const {username, slug} = useParams()
@@ -44,8 +46,8 @@ function ArticlePage() {
               <button type='button' className='bg-white border border-black px-5 py-2 rounded-full'>Follow</button>
             </div>
             <div className='flex md:flex-row flex-col md:gap-5'>
-              <div className='text-gray-600'>4 min read</div>
-              <div className='text-gray-600'>{date}</div>
+              <div className='text-gray-600'>{readingTime(body, 250).text}</div>
+              <div className='text-gray-600'>{moment(date).format("MMM DD, YYYY")}</div>
             </div>
           </div>
           <div>

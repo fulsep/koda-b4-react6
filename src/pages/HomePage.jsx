@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
+import moment from 'moment';
+import { readingTime } from 'reading-time-estimator';
 
 function Headline() {
   const [data, setData] = React.useState({})
@@ -30,7 +32,7 @@ function Headline() {
             <h2 className='font-bold text-3xl'>{title}</h2>
           </Link>
           <Markdown>{synopsis ? synopsis.concat("…") : String(body).slice(0,80).trim().concat("…")}</Markdown>
-          <span className='text-sm text-gray-500'>{author} &middot; {date} &middot; 4 min read</span>
+          <span className='text-sm text-gray-500'>{author} &middot; {moment(date).format("DD MMM")} &middot; {readingTime(body, 250).text}</span>
         </div>
       </div>
     </div>
@@ -50,7 +52,7 @@ function GridItem({title, synopsis, body, author, date, image, username, slug}) 
           <h2 className='font-bold text-3xl'>{title}</h2>
         </Link>
         <Markdown>{synopsis ? synopsis.concat("…") : String(body).slice(0,80).trim().concat("…")}</Markdown>
-        <span className='text-sm text-gray-500'>{author} &middot; {date} &middot; 4 min read</span>
+        <span className='text-sm text-gray-500'>{author} &middot; {moment(date).format("DD MMM")} &middot; {readingTime(body, 250).text}</span>
       </div>
     </div>
   )
